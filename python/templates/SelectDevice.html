@@ -1,0 +1,15 @@
+{% extends "nerdFarm_base.html" %}
+{% block content %}
+        <h1>Welcome: {{email}}</h1>
+	<p>Select a device to view:</p>
+	<form method="post">
+	<select name="farm" id="farm">
+	{% for farm in farms %}
+	<option value={{farm}}>{{farm}}</option>
+	{% endfor %}
+	</select><br>
+	<input type="submit" value='Submit'>
+	</form>
+	<p>Click 'Submit' button to view device</p>
+
+{% endblock %}

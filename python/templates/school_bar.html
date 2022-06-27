@@ -1,0 +1,26 @@
+{% extends "gbe_base.html" %}
+{% block content %}
+    <h1>{{data.title}}</h1>
+    <p>Select School and attribute to display</p>
+
+    <form>
+      <select name="school" action="/school" method="post">
+        {% for school in data.schools %}
+        <option value="{{school}}">{{school}}</option>
+        " {% endfor %}
+      </select>
+      <select name="attribute" action="/school" method="post">
+        {% for attribute in data.attributes %}
+        <option value="{{attribute}}">{{attribute}}</option>
+        " {% endfor %}
+      </select>
+      <input value="Submit" type="submit">
+    </form>
+    <div id="chart" class="chart" ”=""></div>    
+  </body>   
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript">
+  var graphs = {{graphJSON | safe}};
+  Plotly.plot('chart',graphs,{});
+</script>
+{% endblock %}

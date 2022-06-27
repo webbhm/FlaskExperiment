@@ -1,0 +1,15 @@
+{% extends "gbe_t_base.html" %}
+{% block content %}
+<h1>Growing Beyond Earth - Test Chamber</h1>
+    <p>My personal GBE Growth Chamber with custom software and hardware</br>
+<a href="/gbe_t/static/about.html">About</a>
+    <p>This page is a holder for future experiments on the GBE Test Growth Chamber.  This page, and the following charts are being served up from the Flask Server, which is a different Raspberry Pi from the GBE_T itself.</p>
+    <p>Charting</p>
+    <p><a href="env">Environemntal Data Chart</a> Defaults to CO2 and All Data</p>
+    <p><a href="dew_point">Dewpoint Chart</a> Dewpoint calculated from temperature and humidity</p>
+    <p>Other Stuff (on GBE Test Raspberry Pi)</p>
+    <p><a href="/gbe_t/static/picture.html">Latest Picture from the Box</a> Updated hourly</br>
+	<a href="/gbe_t/static/gif.html">GIF from the Box</a> Generated once a day</br>
+
+
+{% endblock %}

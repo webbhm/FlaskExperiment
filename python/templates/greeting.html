@@ -1,0 +1,14 @@
+{% extends "nerdFarm_base.html" %}
+{% block content %}
+        <h1>Welcome: {{email}}</h1>
+	<p>Select a farm to view:</p>
+	<form action="" method="post" nonvalidate>
+	<select name="farm" id="farm">
+	{% for farm in farms %}
+	<option value={{farm}}>{{farm}}</option>
+	{% endfor %}
+	</elect>
+	<p>Select a farm to view</p>
+	<imput type=submit value='Submit'>
+	</form>
+{% endblock %}

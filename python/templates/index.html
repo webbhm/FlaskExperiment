@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Flask Server on the Experimental Raspberry Pi</h1>
+<p>This server hosts several projects:</p>
+<h2>Growing Beyond Earth Test - Website</h2>
+<p>Charting related links for my personal GBE growth chamber, which has custom hardware and software for MarsFarm testing.</br>
+<p>The GBE Test Website: Recent, Plotly charting experiments</br>
+<a href="/flask/gbe_t">GBE Test Website and Charts</a></p>
+<p>For old stuff running directly on the GBE_T, go here:</br>
+<a href="/gbe_t/static/hello.html" target="_blank">GBE_T Server</a></p>
+<h2>MarsFarm Testing - Website</h2>
+<p>These are prototypes and tests done for Mars Farm.  This uses data taken from schools, stored in MongoDB and referenced via Plotly charts.</p> 
+<a href="http://openagbloom.ddns.net/flask/gbe" target="_blank">GBE Test Website</a> -(ie. MarsFarm)</p>
+
+<h2>Miscelaneous experiments with hardware and software</h2>
+<p><a href="http://openagbloom.ddns.net/video/index.html">Video Feed</a> A home-made web camera using a separate Picamera and software on a Raspberry Pi</p> 
+<p><a href="http://openagbloom.ddns.net/flask/gpio">GPIO Control</a>Software control of GPIO pins to turn LEDs on and off</p>
+
+{% endblock %}

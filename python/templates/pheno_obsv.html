@@ -1,0 +1,23 @@
+{% extends "nerdFarm_base.html" %}
+{% block content %}
+<h2>Phenotype Observation Data Entry Form</h2>
+ 
+{% from "_formhelpers.html" import render_field %}
+<form method=post>
+    <dl>
+        {{ render_field(form.timestamp) }}
+        {{ render_field(form.field) }}
+        {{ render_field(form.trial) }}
+        {{ render_field(form.plot) }}
+        {{ render_field(form.subject) }}
+        {{ render_field(form.attribute) }}
+        {{ render_field(form.value) }}
+        {{ render_field(form.units) }}
+        {{ render_field(form.participant) }}
+        {{ render_field(form.comment) }}
+        {{ render_field(form.save_more) }}
+        {{ render_field(form.save_exit) }}
+        {{ render_field(form.cancel) }}
+    </dl>
+</form>
+{% endblock %}
